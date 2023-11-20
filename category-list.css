@@ -1,0 +1,74 @@
+.list-kategori{
+    background-color: rgb(151, 151, 151);
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-left: 5vh;
+    gap: 4vh;
+    padding: 4vh;
+}
+
+.ingfo-buku{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    padding: 2vh;
+    width: 30vh;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.ingfo-buku .con-cover-buku{
+    overflow: hidden;
+}
+
+.ingfo-buku .con-cover-buku .cover-buku{
+    height: 240px;
+    width: 180px;
+    padding: 30px;
+    transition: 0.3s;
+}
+
+
+.ingfo-buku .con-cover-buku .cover-buku:hover{
+    transform: scale(1.1);
+}
+
+.ingfo-buku .judul-buku{
+    font-size: 20px;
+    margin-bottom: 2vh;
+}
+
+.ingfo-buku .stok-pinjam{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.ingfo-buku .stok-pinjam .ingfo-selebihnya{
+    display: block;
+    background-color: #E82329;
+    border: 0;
+    padding: 1vh;
+    color: white;
+    font-size: 23px;
+    transition: 0.2s;
+    border: #E82329 solid 5px;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    border-radius: 5px
+    
+}
+
+.ingfo-buku .stok-pinjam .ingfo-selebihnya:hover{
+    background-color: #ffffff;
+    color:#E82329;
+}
+
+.ingfo-buku div span{
+    font-size: 20px;
+}
