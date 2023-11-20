@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../css/category-list.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;400&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $(".menu-toggle").click(function(){
+            $(".sidebar").toggleClass("active"),
+            (".menu-toggle").toggleClass("active");
+          });
+        });
+        $(document).ready(function(){
+          $(".profile-button").click(function(){
+            $(".user-dropdown").toggleClass("active");
+          });
+        });
+
+const element = document.querySelector('.transformed-element');
+element.style.setProperty('--nv', '0');
+
+        </script>
+</head>
+<body>
+    <div class="validation">
+        <div>
+            <img src="../asset/validation.png" alt="">
+            <p>Selamat Datang Kembali, Rizal Anime PD 2X</p>
+        </div>
+    </div>
+    <div class="container">
+            <nav class="sidebar">
+                <img src="../asset/logo.png" alt="">
+                <div class="nav-main">
+                    <a href="#" data-nv="0">Beranda</a>
+                    <a href="#" data-nv="1">List Buku</a>
+                    <a href="#" data-nv="2">Pinjaman</a>                    
+                </div>
+            </nav>  
+        <div class="main-content">
+            <nav class="web-header">
+                <div class="left"><button class="menu-toggle"><img src="../asset/menu.png" alt="" srcset=""></button></div>
+                <div class="mid"></div>
+                <div class="right">
+                    <button class="profile-button">
+                        <span>Rizal Anime PD 2X</span>
+                        <img src="../asset/profile.jpg" alt="">
+                    </button>
+                    <div class="user-dropdown">
+                        <ul>
+                            <li>
+                                <a href="">Profil</a>
+                            </li>
+                            <li>
+                                <a class="logout" href="">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="web-content">
+                <div class="welcome-bar">
+                    <span>Selamat datang, Rizal Anime PD 2X</span>
+                </div>
+                <h1>List Buku terbaru</h1>
+                <div class="list-kategori">
+                    <div class="ingfo-buku">
+                        <a href="" class="con-cover-buku">
+                            <img class="cover-buku" src="../asset/cover-buku.jpg" alt="">
+                        </a>    
+                        <p class="judul-buku">10 Dosa Besar Soeharto (Full Remastered)</p>
+                        <div class="stok-pinjam">
+                            <span>Stok: 500</span>
+
+                            <button class="ingfo-selebihnya">Pinjam</button>
+                        </div>
+                    </div>
+                    <div class="ingfo-buku">
+                        <a href="" class="con-cover-buku">
+                            <img class="cover-buku" src="../asset/cover-buku.jpg" alt="">
+                        </a>                         
+                        <p class="judul-buku">10 Dosa Besar Soeharto (Full Remastered)</p>
+                        <div class="stok-pinjam">
+                            <span>Stok: 0</span>
+                            <button class="ingfo-selebihnya">Pinjam</button>
+                        </div>
+                    </div>
+                    <div class="ingfo-buku">
+                        <a href="" class="con-cover-buku">
+                            <img class="cover-buku" src="../asset/cover-buku.jpg" alt="">
+                        </a>                          
+                        <p class="judul-buku">10 Dosa Besar Soeharto (Full Remastered)</p>
+                        <div class="stok-pinjam">
+                            <span>Stok: 0</span>
+                            <button class="ingfo-selebihnya">Pinjam</button>
+                        </div>
+                    </div>
+                    <div class="ingfo-buku">
+                        <a href="" class="con-cover-buku">
+                            <img class="cover-buku" src="../asset/cover-buku.jpg" alt="">
+                        </a>                        
+                        <p class="judul-buku">10 Dosa Besar Soeharto (Full Remastered 2024 Jilid ke-1945 Nomer 34 Ayat 98 No root Nusantara Edition Rill anti fake)</p>
+                        <div class="stok-pinjam">
+                            <span>Stok: 0</span>
+                            <button class="ingfo-selebihnya">Pinjam</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
